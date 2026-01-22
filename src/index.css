@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Noto Sans JP', sans-serif;
+    @apply bg-background-light text-[#111718];
+  }
+}
+
+@layer components {
+  .bento-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .bento-card:active {
+    transform: scale(0.98);
+  }
+  
+  .glass-sidebar {
+    background-color: #1a1a1a;
+  }
+  
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .preview-table-sp th {
+    background-color: #eee;
+    border: 1px solid #ddd;
+    padding: 12px;
+    font-weight: bold;
+    text-align: left;
+    width: 35%;
+  }
+  
+  .preview-table-sp td {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  .tab-active {
+    border-bottom: 2px solid #008c99;
+    color: #008c99;
+  }
+  
+  .toggle-checkbox:checked {
+    @apply right-0 border-primary bg-primary;
+  }
+  
+  .toggle-checkbox:checked + .toggle-label {
+    @apply bg-primary/20;
+  }
+}
