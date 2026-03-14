@@ -6,6 +6,9 @@ export default function Sidebar({ activePath }) {
         { path: '/html-generator', icon: 'html', label: 'HTML生成' },
         { path: '/badge-tool', icon: 'image', label: '画像バッジ加工' },
         { path: '/url-generator', icon: 'link', label: 'URL生成' },
+        { path: '/lp-heatmap', icon: 'local_fire_department', label: 'LPヒートマップ' },
+        { path: '/thumbnail-ab', icon: 'compare', label: 'サムネABテスト' },
+        { path: '/competitor-analysis', icon: 'analytics', label: '競合分析' },
     ]
 
     return (

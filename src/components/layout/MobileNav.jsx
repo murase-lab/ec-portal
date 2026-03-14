@@ -7,7 +7,7 @@ export default function MobileNav({ activePath }) {
             path: '/html-generator',
             icon: 'auto_fix_high',
             label: 'ツール',
-            activePaths: ['/html-generator', '/badge-tool', '/url-generator']
+            activePaths: ['/html-generator', '/badge-tool', '/url-generator', '/lp-heatmap', '/thumbnail-ab', '/competitor-analysis']
         },
         { path: '/settings', icon: 'settings', label: '設定' },
     ]
